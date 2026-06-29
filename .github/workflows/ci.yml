@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    name: Build & Test (Debug)
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache GoogleTest
+        uses: actions/cache@v4
+        with:
+          path: build/_deps
+          key: gtest-ubuntu22-${{ hashFiles('CMakeLists.txt') }}
+          restore-keys: gtest-ubuntu22-
+
+      - name: Configure
+        run: cmake -B build -DCMAKE_BUILD_TYPE=Debug
+
+      - name: Build
+        run: cmake --build build --parallel $(nproc)
+
+      - name: Test
+        working-directory: build
+        run: ctest --output-on-failure
+
+  release-build:
+    name: Release Build
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache GoogleTest
+        uses: actions/cache@v4
+        with:
+          path: build-release/_deps
+          key: gtest-ubuntu22-${{ hashFiles('CMakeLists.txt') }}
+          restore-keys: gtest-ubuntu22-
+
+      - name: Configure
+        run: cmake -B build-release -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build
+        run: cmake --build build-release --parallel $(nproc)

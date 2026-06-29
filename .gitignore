@@ -1,0 +1,34 @@
+# Build directories
+build/
+build-*/
+.cache/
+cmake-build-*/
+
+# CMake user presets (local overrides, not for VCS)
+CMakeUserPresets.json
+
+# Compiled objects
+*.o
+*.a
+*.so
+*.out
+
+# Executables
+mac_scheduler
+
+# Doxygen output
+docs/html/
+docs/latex/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# compile_commands.json (symlinked to build/ for IDE; do not commit)
+compile_commands.json
