@@ -1,13 +1,12 @@
 # 5G gNodeB MAC Scheduler Simulator
 
-[![CI](https://github.com/YOUR_USERNAME/5g-mac-scheduler/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/5g-mac-scheduler/actions/workflows/ci.yml)
+[![CI](https://github.com/sokldjs554/5g-mac-scheduler/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/5g-mac-scheduler/actions/workflows/ci.yml)
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
 [![CMake](https://img.shields.io/badge/CMake-3.16%2B-blue.svg)](https://cmake.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-127%20passing-brightgreen.svg)](#run-tests)
 
 > **Portfolio project** — Ericsson Korea R&D 5G/6G RAN System SW Developer  
-> After cloning, replace `YOUR_USERNAME` in this file with your GitHub username to activate the CI badge.
 
 A **C++17** simulation of the downlink MAC (Medium Access Control) scheduler in a 5G NR gNodeB.  
 Implements the **Round Robin** and **Proportional Fair** scheduling algorithms based on **3GPP TS 38.321**.
