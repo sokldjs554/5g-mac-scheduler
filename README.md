@@ -1,6 +1,6 @@
 # 5G gNodeB MAC Scheduler Simulator
 
-[![CI](https://github.com/sokldjs554/5g-mac-scheduler/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/5g-mac-scheduler/actions/workflows/ci.yml)
+[![CI](https://github.com/YOUR_USERNAME/5g-mac-scheduler/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/5g-mac-scheduler/actions/workflows/ci.yml)
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
 [![CMake](https://img.shields.io/badge/CMake-3.16%2B-blue.svg)](https://cmake.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
