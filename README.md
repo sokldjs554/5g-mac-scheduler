@@ -238,7 +238,7 @@ PRBs are distributed in that order (equal shares, same split as RR).
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_USERNAME/5g-mac-scheduler.git
+git clone https://github.com/sokldjs554/5g-mac-scheduler.git
 cd 5g-mac-scheduler
 
 # Debug build (default)
